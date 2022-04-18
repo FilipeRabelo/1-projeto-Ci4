@@ -1,9 +1,12 @@
+
+<!-- ARQUIVO PARA CHAMAR OS TEMPLATES COM AS VIEWS SEPERADAS PELO MVC -->
+
 <?php
 
     namespace App\Controllers;
 
-use CodeIgniter\Config\View;
-use CodeIgniter\Controller;
+    use CodeIgniter\Config\View;
+    use CodeIgniter\Controller;
 
     class Inicio extends Controller{
 
