@@ -2,19 +2,15 @@
 
     namespace App\Controllers;
 
+    use CodeIgniter\View;
     use CodeIgniter\Controller;
 
-    class Clientes extends Controller{
+    class Clientes extends Controller {
 
-        public function novo(){
-
-           
-            echo View("templates/header");
-            echo View("clientes/novo");
-            echo View("templates/footer");
-
+        public function novo() {
+            echo View('templates/header');
+            echo View('clientes/novo');
+            echo View('templates/footer');
         }
-
+        
     }
-
-?>
