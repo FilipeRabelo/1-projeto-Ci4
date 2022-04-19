@@ -56,6 +56,7 @@
                                                 <td><?= $cliente["limite_de_credito"]  ?></td>
                                                 <td>
                                                     <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning">Editar</a>
+                                                    <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/excluir/<?= $cliente["id_cliente"] ?>" class="btn btn-danger">Excluir</a>
                                                 </td>
                                             </tr>
 

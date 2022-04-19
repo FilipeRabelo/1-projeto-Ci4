@@ -49,6 +49,18 @@
 
         }
 
+        public function excluir($id_cliente){
+
+            $this->cliente_model 
+                            ->where("id_cliente", $id_cliente)
+                            ->delete();
+
+                                       
+            return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");
+         
+
+        }
+
         //Funcao para cadastrar e inserir os dados no banco de dados
         public function store(){
 
@@ -61,7 +73,7 @@
                      ->set($dados)
                      ->update();
 
-                    return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/{$dados['id_cliente']}");
+                return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/{$dados['id_cliente']}");
 
             endif;
 
