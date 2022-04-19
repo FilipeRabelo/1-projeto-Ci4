@@ -29,9 +29,24 @@
         }
 
         public function novo() {
+
             echo View('templates/header');
             echo View('clientes/novo');
             echo View('templates/footer');
+        }
+
+        public function editar($id_cliente){
+
+            $cliente = $this->cliente_model
+                                        ->where("id_cliente" , $id_cliente)
+                                        ->first();
+
+            $data["cliente"] = $cliente;
+
+            echo View('templates/header');
+            echo View('clientes/editar', $data);
+            echo View('templates/footer');
+
         }
 
         //Funcao para cadastrar e inserir os dados no banco de dados
@@ -39,9 +54,20 @@
 
             $dados = $this->request->getVar();        // AQUI EU RECUPERO tudo q estiver sendo mandando para essa funcao
 
+            if(isset($dados["id_cliente"])):
+
+                $this->cliente_model
+                     ->where("id_cliente", $dados["id_cliente"])  // ESTOU ATUALIZANDO OS DADOS REFERENTE AO ID CORRESPONDENTE Q ESTA DENTRO DO MEU ARRAY
+                     ->set($dados)
+                     ->update();
+
+                    return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/{$dados['id_cliente']}");
+
+            endif;
+
             $this->cliente_model->insert($dados);     // AQUI EU CADASTRO
 
-            return redirect()->to("/clientes");  // AQUI EU REDIRECIONO PARA A URL
+            return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");  // AQUI EU REDIRECIONO PARA A URL
 
                 #me atendar as palavras no plural
 

@@ -40,6 +40,7 @@
                                             <th>telefone</th>
                                             <th>Endereço</th>
                                             <th>Limite de Crédito</th>
+                                            <th>Ações</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -53,6 +54,9 @@
                                                 <td><?= $cliente["telefone"]           ?></td>
                                                 <td><?= $cliente["endereco"]           ?></td>
                                                 <td><?= $cliente["limite_de_credito"]  ?></td>
+                                                <td>
+                                                    <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning">Editar</a>
+                                                </td>
                                             </tr>
 
                                         <?php endforeach; ?>
