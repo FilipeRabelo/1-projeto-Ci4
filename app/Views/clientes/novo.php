@@ -9,8 +9,10 @@
                   </div><!-- /.col -->
                   <div class="col-sm-6">
                       <ol class="breadcrumb float-sm-right">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item active">Starter Page</li>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes" class="btn btn-success" style="margin-right: 15px;">Voltar</a>
+                          <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Inicio</a></li>
+                          <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes">Clientes</a></li>
+                          <li class="breadcrumb-item active">Novo</li>
                       </ol>
                   </div><!-- /.col -->
               </div><!-- /.row -->
@@ -28,7 +30,7 @@
                               <h3 class="card-title">Dados Pessoais</h3>
                           </div>
 
-                          <form action="/clientes/store" method="POST">
+                          <form action=" http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/store" method="POST">
                               <div class="card-body">
                                   <div class="row">
                                       <div class="col-lg-6">

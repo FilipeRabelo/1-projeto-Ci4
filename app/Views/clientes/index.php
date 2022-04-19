@@ -19,43 +19,43 @@
         </div>
         <!-- /.content-header -->
 
-      <!-- Main content -->
+        <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
 
-              <div class="row">
-                  <div class="col lg 12">
+                <div class="row">
+                    <div class="col lg 12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Registros</h3>
+                                <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info">Novo Cliente</a>
                             </div>
 
                             <div class="card-body">
                                 <table class="table table-bordered">
                                     <thead>
-                                      <tr>
-                                          <th style="width: 10px">Código</th>
-                                          <th>Nome</th>
-                                          <th>Data de Nascimento</th>
-                                          <th>telefone</th>
-                                          <th>Endereço</th>
-                                          <th>Limite de Crédito</th>
-                                      </tr>
+                                        <tr>
+                                            <th style="width: 10px">Código</th>
+                                            <th>Nome</th>
+                                            <th>Data de Nascimento</th>
+                                            <th>telefone</th>
+                                            <th>Endereço</th>
+                                            <th>Limite de Crédito</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      
-                                    <?php foreach($clientes as $cliente): ?>
 
-                                        <tr>
-                                            <td><?= $cliente["id_cliente"]         ?></td>
-                                            <td><?= $cliente["nome"]              ?></td>
-                                            <td><?= $cliente["data_de_nascimento"] ?></td>
-                                            <td><?= $cliente["telefone"]           ?></td>
-                                            <td><?= $cliente["endereco"]           ?></td>
-                                            <td><?= $cliente["limite_de_credito"]  ?></td>
-                                        </tr>
+                                        <?php foreach ($clientes as $cliente) : ?>
 
-                                    <?php endforeach; ?>
+                                            <tr>
+                                                <td><?= $cliente["id_cliente"]         ?></td>
+                                                <td><?= $cliente["nome"]               ?></td>
+                                                <td><?= $cliente["data_de_nascimento"] ?></td>
+                                                <td><?= $cliente["telefone"]           ?></td>
+                                                <td><?= $cliente["endereco"]           ?></td>
+                                                <td><?= $cliente["limite_de_credito"]  ?></td>
+                                            </tr>
+
+                                        <?php endforeach; ?>
 
                                     </tbody>
                                 </table>
@@ -68,7 +68,7 @@
                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                               </ul>
+                                </ul>
                             </div>
                         </div>
 
