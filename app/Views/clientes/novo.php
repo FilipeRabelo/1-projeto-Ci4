@@ -28,13 +28,13 @@
                               <h3 class="card-title">Dados Pessoais</h3>
                           </div>
 
-                          <form>
+                          <form action="/clientes/store" method="POST">
                               <div class="card-body">
                                   <div class="row">
                                       <div class="col-lg-6">
                                           <div class="form-group">
                                               <label for="">Nome</label>
-                                              <input type="text" class="form-control" name="cliente" placeholder="Digite seu Nome...">
+                                              <input type="text" class="form-control" name="nome" placeholder="Digite seu Nome...">
                                           </div>
                                       </div>
 

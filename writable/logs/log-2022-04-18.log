@@ -5,3 +5,16 @@ CRITICAL - 2022-04-18 13:09:20 --> syntax error, unexpected token "}", expecting
 #3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-04-18 18:53:50 --> Call to a member function insert() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Clientes->store()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 18:56:21 --> Undefined variable $cliente_model
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Clientes.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(809): App\Controllers\Clientes->__construct()
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

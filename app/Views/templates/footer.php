@@ -15,7 +15,8 @@
                 Anything you want
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; 2022<a href="https://www.linkedin.com/in/filipe-rabelo-lana-648799228/" 
+            target="_blank">Filipe Rabelo</a>.</strong> All rights reserved.
         </footer>
 
         </div>
@@ -32,8 +33,8 @@
         <script src="<?= base_url("theme/plugins/bootstrap/js/bootstrap.bundle.min.js") ?>"></script>
 
         <!-- AdminLTE App -->
-        <script src="<?= base_url("theme/dist/js/adminlte.min.js") ?>"></script>    
+        <script src="<?= base_url("theme/dist/js/adminlte.min.js") ?>"></script>
 
-    </body>
+        </body>
 
-</html>
+        </html>
