@@ -15,6 +15,19 @@
             
         }
 
+        //METODO PARA RECUPERAR TUDO O Q ESTA NO BANCO DE DADOS/ TODOS OS CLIENTES CADASTRADOS E VAMO JOGAR DENTRO DE UMA VARIAVEL $CLIENTE
+        public function index(){
+
+            $clientes = $this->cliente_model->findAll(); //findAll para recuperar os dados
+
+            $data["clientes"] = $clientes;
+
+            echo View('templates/header');
+            echo View('clientes/index', $data);
+            echo View('templates/footer');
+
+        }
+
         public function novo() {
             echo View('templates/header');
             echo View('clientes/novo');
@@ -28,7 +41,7 @@
 
             $this->cliente_model->insert($dados);     // AQUI EU CADASTRO
 
-            return redirect()->to("/clientes/novo");  // AQUI EU REDIRECIONO PARA A URL
+            return redirect()->to("/clientes");  // AQUI EU REDIRECIONO PARA A URL
 
                 #me atendar as palavras no plural
 
