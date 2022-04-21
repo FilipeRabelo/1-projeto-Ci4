@@ -1,0 +1,18 @@
+CRITICAL - 2022-04-20 12:53:55 --> Too few arguments to function App\Controllers\Clientes::excluir(), 0 passed in C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Clientes->excluir()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-20 12:55:20 --> Too few arguments to function App\Controllers\Clientes::excluir(), 0 passed in C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Clientes->excluir()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-20 12:55:28 --> Too few arguments to function App\Controllers\Clientes::excluir(), 0 passed in C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Clientes->excluir()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

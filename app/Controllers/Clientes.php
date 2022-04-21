@@ -28,6 +28,7 @@
 
         }
 
+        //NOVO CADASTRO
         public function novo() {
 
             echo View('templates/header');
@@ -35,6 +36,7 @@
             echo View('templates/footer');
         }
 
+        //EDITAR CADASTRO
         public function editar($id_cliente){
 
             $cliente = $this->cliente_model
@@ -49,22 +51,40 @@
 
         }
 
-        public function excluir($id_cliente){
+        //EXCLUIR CADASTRO
+        public function excluir(){
+
+            $id_cliente = $this->request->getVar("id_cliente");
 
             $this->cliente_model 
                             ->where("id_cliente", $id_cliente)
                             ->delete();
 
                                        
-            return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");
-         
+            return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");         
 
         }
+
+        //VER CADASTRO
+        public function ver($id_cliente){
+
+            $cliente = $this->cliente_model
+                                    ->where("id_cliente", $id_cliente)
+                                    ->first();
+            
+            $data["cliente"] = $cliente;             
+
+            echo View('templates/header');
+            echo View('clientes/ver', $data);
+            echo View('templates/footer');
+
+        }
+
 
         //Funcao para cadastrar e inserir os dados no banco de dados
         public function store(){
 
-            $dados = $this->request->getVar();        // AQUI EU RECUPERO tudo q estiver sendo mandando para essa funcao
+            $dados = $this->request->getVar();  // AQUI EU RECUPERO tudo q estiver sendo mandando para essa funcao
 
             if(isset($dados["id_cliente"])):
 

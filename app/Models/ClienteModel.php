@@ -26,7 +26,7 @@ use CodeIgniter\Model;
         ];
         protected $useTimestamps = true;         // useTimestamps -> usar carimbos de tempos
         protected $createdField  = "created_at"; // campos permitidos = criado em
-        protected $updatedField  = "updated_at"; // atualizae em
+        protected $updatedField  = "updated_at"; // atualizar em
         protected $deleteField   = "delete_at" ; // deletar em
                                    
     }

@@ -1,3 +1,34 @@
+    <!-- botao de confirmcao de exclusao -->
+
+
+    <div class="modal fade" id="modal-confirmacao-delete">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/excluir" method="POST">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Confirme sua Ação</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Deseja realmente excluir esse cliente?</p>
+                        <input type="hidden" id="id_cliente" name="id_cliente" value="">
+                    </div>
+
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Sim</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -10,7 +41,7 @@
 
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Home</a></li>
                             <li class="breadcrumb-item active">Starter Page</li>
                         </ol>
                     </div><!-- /.col -->
@@ -55,8 +86,13 @@
                                                 <td><?= $cliente["endereco"]           ?></td>
                                                 <td><?= $cliente["limite_de_credito"]  ?></td>
                                                 <td>
+                                                    <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/ver/<?= $cliente["id_cliente"] ?>" class="btn btn-primary">Ver</a>
                                                     <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning">Editar</a>
-                                                    <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/excluir/<?= $cliente["id_cliente"] ?>" class="btn btn-danger">Excluir</a>
+                                                    <button type="button" class="btn btn-danger" 
+                                                            onclick = "document.getElementById('id_cliente').value = '<?= $cliente['id_cliente'] ?>' "  
+                                                            data-toggle="modal" 
+                                                            data-target="#modal-confirmacao-delete">Excluir
+                                                    </button>
                                                 </td>
                                             </tr>
 
