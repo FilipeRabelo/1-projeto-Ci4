@@ -73,7 +73,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Data de Contratação</label>
-                      <input type="text" class="form-control" name="data_de_contratacao" placeholder="Digite a data de contratação...">
+                      <input type="date" class="form-control" name="data_de_contratacao" placeholder="Digite a data de contratação...">
                     </div>
                   </div>
 

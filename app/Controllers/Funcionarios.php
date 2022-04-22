@@ -28,12 +28,22 @@
 
     public function novo(){
 
-
-
       echo View("templates/header");
-      echo View("funcionarios/form");
+      echo View("funcionarios/form"); // form, nova forma de criar o novo
       echo View("templates/footer");
 
+    }
+
+    public function store(){
+
+      $dados = $this->request->getVar();
+
+      $this->funcionario_model->insert($dados);
+
+      $session = session();
+      $session->setFlashdata("alert", "sucess_create");
+
+      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios");
 
     }
 
