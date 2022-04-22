@@ -1,5 +1,5 @@
-<!-- botao de confirmcao de exclusao -->
 
+<!-- INICIO botao de confirmacao de exclusao -->
 
 <div class="modal fade" id="modal-confirmacao-delete">
   <div class="modal-dialog">
@@ -27,9 +27,10 @@
     </div>
   </div>
 </div>
+<!-- FIM botao de confirmacao de exclusao -->
 
 
-<!-- Content Wrapper. Contains page content -->
+<!-- CONTEUDO DA PAGINA -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
@@ -55,8 +56,8 @@
     <div class="container-fluid">
 
       <?php
-      $session = session();
-      $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
+        $session = session();
+        $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
       <?php if (isset($alert)) : ?>
@@ -90,8 +91,11 @@
       <div class="row">
         <div class="col lg 12">
           <div class="card">
+
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> Novo Funcionário</a>
+              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/novo" class="btn btn-info">
+                <i class="fas fa-user-plus"></i> Novo Funcionário
+              </a>
             </div>
 
             <div class="card-body">
@@ -161,6 +165,7 @@
                 <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
               </ul>
             </div>
+
           </div>
 
         </div>
