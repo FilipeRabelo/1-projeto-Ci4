@@ -33,6 +33,17 @@
             </a>
           </li>
         </ul>
+
+          <li class="nav-item">
+            <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Funcionarios
+              </p>
+            </a>
+          </li>
+        </ul>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>

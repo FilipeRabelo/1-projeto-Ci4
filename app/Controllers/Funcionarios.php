@@ -18,7 +18,9 @@
 
     public function index(){
 
-      return "Index Funcionarios";
+      echo View("templates/header");
+      echo View("funcionarios/index");
+      echo View("templates/footer");
 
     }
 
