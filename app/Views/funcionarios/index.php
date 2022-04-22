@@ -91,11 +91,12 @@
         <div class="col lg 12">
           <div class="card">
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> Novo Cliente</a>
+              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> Novo Funcionário</a>
             </div>
 
             <div class="card-body">
               <table class="table table-bordered">
+
                 <thead>
                   <tr>
                     <th style="width: 10px">Código</th>
@@ -108,30 +109,31 @@
                     <th>Cargo</th>
                     <th>Salario</th>
                     <th>Dia do Pagamento</th>
+                    <th>Ações</th>
                   </tr>
                 </thead>
-                <tbody>
 
+                <tbody>
                   <?php if (!empty($funcionarios)) : ?>
                     <!-- SE O ARRAY NAO FOR VAZIO  PERCORRE O FOREACH-->
 
                     <?php foreach ($funcionarios as $funcionario) : ?>
 
                       <tr>
-                        <td><?= $funcionario["id_cliente"]         ?></td>
-                        <td><?= $funcionario["nome"]               ?></td>
-                        <td><?= $funcionario["data_de_nascimento"] ?></td>
-                        <td><?= $funcionario["rg"]                 ?></td>
-                        <td><?= $funcionario["cpf"]                ?></td>
-                        <td><?= $funcionario["telefone"]           ?></td>
-                        <td><?= $funcionario["data_de_contratacao"]?></td>
-                        <td><?= $funcionario["cargo"]              ?></td>
-                        <td><?= $funcionario["salario"]            ?></td>
-                        <td><?= $funcionario["dia_do_pagamento"]   ?></td>
+                        <td><?= $funcionario["id_funcionario"]      ?></td>
+                        <td><?= $funcionario["nome"]                ?></td>
+                        <td><?= $funcionario["data_de_nascimento"]  ?></td>
+                        <td><?= $funcionario["rg"]                  ?></td>
+                        <td><?= $funcionario["cpf"]                 ?></td>
+                        <td><?= $funcionario["telefone"]            ?></td>
+                        <td><?= $funcionario["data_de_contratacao"] ?></td>
+                        <td><?= $funcionario["cargo"]               ?></td>
+                        <td><?= $funcionario["salario"]             ?></td>
+                        <td><?= $funcionario["dia_do_pagamento"]    ?></td>
                         <td>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/ver/<?= $cliente["id_cliente"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>
-                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_cliente').value = '<?= $cliente['id_cliente'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i></button>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>
+                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_cliente').value = '<?= $funcionario['id_funcionario'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i></button>
                         </td>
                       </tr>
 
@@ -141,12 +143,12 @@
                     <!-- SE ELE FOR VAZIO -->
 
                     <tr>
-                      <td colspan="7">Nehum Funcionário cadastrado!</td>
+                      <td colspan="12">Nenhum Funcionário cadastrado!</td>
                     </tr>
 
                   <?php endif; ?>
-
                 </tbody>
+
               </table>
             </div>
 
