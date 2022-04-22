@@ -56,19 +56,34 @@
 
       <?php
         $session = session();
-        $alert   = $session->get("alert");
+        $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
-      <?php if (isset($alert) && $alert == 'sucess_create'): ?>
+      <?php if (isset($alert)) : ?>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="alert alert-success alert-dismissible">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Cliente cadastrado com sucesso!
+        <?php if ($alert == 'sucess_create') : ?>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Cliente cadastrado com sucesso!
+              </div>
             </div>
           </div>
-        </div>
+
+        <?php elseif ($alert == 'sucess_delete') : ?>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Cliente excluído com sucesso!
+              </div>
+            </div>
+          </div>
+
+        <?php endif; ?>
 
       <?php endif; ?>
 

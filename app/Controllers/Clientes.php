@@ -63,6 +63,9 @@ class Clientes extends Controller
       ->where("id_cliente", $id_cliente)
       ->delete();
 
+    $session = session();
+    $session->setFlashdata('alert', 'sucess_delete');
+
 
     return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");
   }
@@ -96,6 +99,9 @@ class Clientes extends Controller
         ->set($dados)
         ->update();
 
+      $session = session();
+      $session->setFlashdata('alert', 'sucess_update');
+
       return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/{$dados['id_cliente']}");
 
     endif;
@@ -103,7 +109,7 @@ class Clientes extends Controller
     $this->cliente_model->insert($dados);     // AQUI EU CADASTRO
 
     $session = session();
-    $session->setFlashdata('alert', 'sucess,create');
+    $session->setFlashdata('alert', 'sucess_create');
 
     return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");  // AQUI EU REDIRECIONO PARA A URL
 

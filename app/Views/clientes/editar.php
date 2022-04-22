@@ -23,6 +23,29 @@
   <!-- Main content -->
   <div class="content">
     <div class="container-fluid">
+
+      <?php
+      $session = session();
+      $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
+      ?>
+
+      <?php if (isset($alert)) : ?>
+
+        <?php if ($alert == 'sucess_update') : ?>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Cliente atualizado com sucesso!
+              </div>
+            </div>
+          </div>
+       
+        <?php endif; ?>
+
+      <?php endif; ?>
+
       <div class="row">
         <div class="col-lg-12">
           <div class="card card-primary">
@@ -30,7 +53,7 @@
               <h3 class="card-title">Dados Pessoais</h3>
             </div>
 
-            <form action=" http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/store" method="POST">
+            <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/store" method="POST">
               <div class="card-body">
                 <div class="row">
                   <div class="col-lg-6">
@@ -55,7 +78,7 @@
                   </div>
 
                   <div class="col-lg-9">
-                    F <div class="form-group">
+                    <div class="form-group">
                       <label for="">Endereço</label>
                       <input type="text" class="form-control" name="endereco" value="<?= $cliente["endereco"] ?>" placeholder="Digite seu Endereço...">
                     </div>
