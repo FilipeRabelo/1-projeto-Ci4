@@ -54,8 +54,7 @@ class Clientes extends Controller
   }
 
   //EXCLUIR CADASTRO
-  public function excluir()
-  {
+  public function excluir(){
 
     $id_cliente = $this->request->getVar("id_cliente");
 
@@ -71,8 +70,7 @@ class Clientes extends Controller
   }
 
   //VER CADASTRO
-  public function ver($id_cliente)
-  {
+  public function ver($id_cliente){
 
     $cliente = $this->cliente_model
       ->where("id_cliente", $id_cliente)
@@ -87,8 +85,7 @@ class Clientes extends Controller
 
 
   //Funcao para cadastrar e inserir os dados no banco de dados
-  public function store()
-  {
+  public function store() {
 
     $dados = $this->request->getVar();  // AQUI EU RECUPERO tudo q estiver sendo mandando para essa funcao
 
@@ -112,9 +109,6 @@ class Clientes extends Controller
     $session->setFlashdata('alert', 'sucess_create');
 
     return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");  // AQUI EU REDIRECIONO PARA A URL
-
-
-
 
     #me atendar as palavras no plural
 

@@ -9,7 +9,7 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes" class="btn btn-success" style="margin-right: 15px;">Voltar</a>
+            <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes" class="btn btn-success" style="margin-right: 15px;"> <i class="fas fa-arrow-alt-circle-left"></i>&nbsp Voltar </a>
             <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Inicio</a></li>
             <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes">Clientes</a></li>
             <li class="breadcrumb-item active">Atualizar</li>
@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-       
+
         <?php endif; ?>
 
       <?php endif; ?>
@@ -97,7 +97,7 @@
               </div>
 
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Atualizar</button>
+                <button type="submit" class="btn btn-primary">Atualizar  &nbsp <i class="fas fa-save"></i></button>
               </div>
             </form>
           </div>

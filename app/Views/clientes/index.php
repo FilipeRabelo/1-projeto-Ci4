@@ -41,8 +41,8 @@
 
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Home</a></li>
-            <li class="breadcrumb-item active">Starter Page</li>
+            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Inicio</a></li>
+            <li class="breadcrumb-item active">Clientes</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -55,8 +55,8 @@
     <div class="container-fluid">
 
       <?php
-        $session = session();
-        $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
+      $session = session();
+      $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
       <?php if (isset($alert)) : ?>
@@ -91,7 +91,7 @@
         <div class="col lg 12">
           <div class="card">
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info">Novo Cliente</a>
+              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> Novo Cliente</a>
             </div>
 
             <div class="card-body">
@@ -109,24 +109,35 @@
                 </thead>
                 <tbody>
 
-                  <?php foreach ($clientes as $cliente) : ?>
+                  <?php if (!empty($clientes)) : ?>
+                    <!-- SE O ARRAY NAO FOR VAZIO  PERCORRE O FOREACH-->
+
+                    <?php foreach ($clientes as $cliente) : ?>
+
+                      <tr>
+                        <td><?= $cliente["id_cliente"]         ?></td>
+                        <td><?= $cliente["nome"]               ?></td>
+                        <td><?= $cliente["data_de_nascimento"] ?></td>
+                        <td><?= $cliente["telefone"]           ?></td>
+                        <td><?= $cliente["endereco"]           ?></td>
+                        <td><?= $cliente["limite_de_credito"]  ?></td>
+                        <td>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/ver/<?= $cliente["id_cliente"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>
+                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_cliente').value = '<?= $cliente['id_cliente'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i></button>
+                        </td>
+                      </tr>
+
+                    <?php endforeach; ?>
+
+                  <?php else : ?>
+                    <!-- SE ELE FOR VAZIO -->
 
                     <tr>
-                      <td><?= $cliente["id_cliente"]         ?></td>
-                      <td><?= $cliente["nome"]               ?></td>
-                      <td><?= $cliente["data_de_nascimento"] ?></td>
-                      <td><?= $cliente["telefone"]           ?></td>
-                      <td><?= $cliente["endereco"]           ?></td>
-                      <td><?= $cliente["limite_de_credito"]  ?></td>
-                      <td>
-                        <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/ver/<?= $cliente["id_cliente"] ?>" class="btn btn-primary">Ver</a>
-                        <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning">Editar</a>
-                        <button type="button" class="btn btn-danger" onclick="document.getElementById('id_cliente').value = '<?= $cliente['id_cliente'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete">Excluir
-                        </button>
-                      </td>
+                      <td colspan="7">Nehum cliente cadastrado!</td>
                     </tr>
 
-                  <?php endforeach; ?>
+                  <?php endif; ?>
 
                 </tbody>
               </table>
