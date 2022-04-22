@@ -12,15 +12,15 @@
       $this->forge->addField([
 
         'id_cliente'         => [
-          'type'           => "INT",
-          'constraint'     => 9,
-          'usigned'        => true,
-          'auto_increment' => true,
+          'type'             => "INT",
+          'constraint'       => 9,
+          'usigned'          => true,
+          'auto_increment'   => true,
         ],
 
         'nome'               => [
-          'type'           => 'VARCHAR',
-          'constraint'     => 128
+          'type'             => 'VARCHAR',
+          'constraint'       => 128
         ],
 
         'data_de_nascimento' => [
@@ -28,29 +28,29 @@
         ],
 
         'telefone'           => [
-          'type'           => 'INT',
-          'constraint'     => 32
+          'type'             => 'INT',
+          'constraint'       => 32
         ],
 
         'endereco'           => [
-          'type'           => 'VARCHAR',
-          'constraint'     => 128
+          'type'            => 'VARCHAR',
+          'constraint'       => 128
         ],
 
         'limite_de_credito'  => [
-          'type'           => "DOUBLE"
+          'type'             => "DOUBLE"
         ],
 
         'created_at'         => [
-          'type'           => "DATETIME"
+          'type'             => "DATETIME"
         ],
 
         'updated_at'         => [
-          'type'           => "DATETIME"
+          'type'             => "DATETIME"
         ],
 
         'delete_at'          => [
-          'type'           => "DATETIME"
+          'type'             => "DATETIME"
         ],
 
       ]);
