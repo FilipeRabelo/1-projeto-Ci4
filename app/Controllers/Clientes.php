@@ -102,7 +102,13 @@ class Clientes extends Controller
 
     $this->cliente_model->insert($dados);     // AQUI EU CADASTRO
 
+    $session = session();
+    $session->setFlashdata('alert', 'sucess,create');
+
     return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");  // AQUI EU REDIRECIONO PARA A URL
+
+
+
 
     #me atendar as palavras no plural
 

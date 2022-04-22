@@ -54,6 +54,24 @@
   <div class="content">
     <div class="container-fluid">
 
+      <?php
+        $session = session();
+        $alert   = $session->get("alert");
+      ?>
+
+      <?php if (isset($alert) && $alert == 'sucess_create'): ?>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              Cliente cadastrado com sucesso!
+            </div>
+          </div>
+        </div>
+
+      <?php endif; ?>
+
       <div class="row">
         <div class="col lg 12">
           <div class="card">
