@@ -26,12 +26,14 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="card card-primary">
+
             <div class="card-header">
               <h3 class="card-title">Dados Pessoais</h3>
             </div>
 
             <form action=" http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/store" method="POST">
               <div class="card-body">
+
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-group">
@@ -49,24 +51,52 @@
 
                   <div class="col-lg-3">
                     <div class="form-group">
-                      <label for="">Telefone</label>
-                      <input type="text" class="form-control" name="telefone" placeholder="Digite seu Telefone...">
-                    </div>
-                  </div>
-
-                  <div class="col-lg-9">
-                    <div class="form-group">
-                      <label for="">Endereço</label>
-                      <input type="text" class="form-control" name="endereco" placeholder="Digite seu Endereço...">
+                      <label for="">RG</label>
+                      <input type="text" class="form-control" name="rg" placeholder="Digite seu Rg">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
-                      <label for="">Limite de Credito</label>
-                      <input type="text" class="form-control" name="limite_de_credito">
+                      <label for="">CPF</label>
+                      <input type="text" class="form-control" name="cpf" placeholder="Digite seu CPF...">
                     </div>
                   </div>
+                  
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Telefone</label>
+                      <input type="text" class="form-control" name="telefone" placeholder="Digite seu Telefone...">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Data de Contratação</label>
+                      <input type="text" class="form-control" name="data_de_contratacao" placeholder="Digite a data de contratação...">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Cargo</label>
+                      <input type="text" class="form-control" name="cargo" placeholder="Digite seu Cargo...">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Salário</label>
+                      <input type="text" class="form-control" name="salario" placeholder="Digite seu Salário...">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Dia de pagamento</label>
+                      <input type="text" class="form-control" name="dia_de_pagamento" placeholder="Digite o dia do seu Pagamento...">
+                    </div>
+                  </div>                 
 
                 </div>
               </div>
@@ -75,7 +105,8 @@
                 <button type="submit" class="btn btn-primary">Cadastrar &nbsp <i class="fas fa-save"></i> </button>
               </div>
             </form>
-          </div>
+
+          </div>          
         </div>
       </div>
       <!-- /.row -->
