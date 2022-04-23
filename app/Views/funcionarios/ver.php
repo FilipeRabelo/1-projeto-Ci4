@@ -58,84 +58,74 @@
 
             <form action=" http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/store" method="POST">
               <div class="card-body">
-
                 <div class="row">
 
                   <div class="col-lg-6">
                     <div class="form-group">
                       <label for="">Nome</label>
-                      <input type="text" class="form-control" name="nome" placeholder="Digite seu Nome..." value=" <?= $funcionario["nome"] ?> ">
+                      <input type="text" class="form-control"  placeholder="Digite seu Nome..." value=" <?= $funcionario["nome"] ?> ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Data de Nascimento</label>
-                      <input type="date" class="form-control" name="data_de_nascimento" value=" value=" <?= $funcionario["data_de_nascimento"] ?>  ">
+                      <input type="date" class="form-control"  value=" value=" <?= $funcionario["data_de_nascimento"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">RG</label>
-                      <input type="text" class="form-control" name="rg" placeholder="Digite seu Rg" value=" <?= $funcionario["rg"] ?>  ">
+                      <input type="text" class="form-control"  placeholder="Digite seu Rg" value=" <?= $funcionario["rg"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">CPF</label>
-                      <input type="text" class="form-control" name="cpf" placeholder="Digite seu CPF..." value=" <?= $funcionario["cpf"] ?>  ">
+                      <input type="text" class="form-control"  placeholder="Digite seu CPF..." value=" <?= $funcionario["cpf"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Telefone</label>
-                      <input type="text" class="form-control" name="telefone" placeholder="Digite seu Telefone..." value=" <?= $funcionario["telefone"] ?>  ">
+                      <input type="text" class="form-control"  placeholder="Digite seu Telefone..." value=" <?= $funcionario["telefone"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Data de Contratação</label>
-                      <input type="date" class="form-control" name="data_de_contratacao" placeholder="Digite a data de contratação..." value=" <?= $funcionario["data_de_contratacao"] ?>  ">
+                      <input type="date" class="form-control"  placeholder="Digite a data de contratação..." value=" <?= $funcionario["data_de_contratacao"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Cargo</label>
-                      <input type="text" class="form-control" name="cargo" placeholder="Digite seu Cargo..." value=" <?= $funcionario["cargo"] ?>  ">
+                      <input type="text" class="form-control"  placeholder="Digite seu Cargo..." value=" <?= $funcionario["cargo"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Salário</label>
-                      <input type="text" class="form-control" name="salario" placeholder="Digite seu Salário..." value=" <?= $funcionario["salario"] ?>  ">
+                      <input type="text" class="form-control"  placeholder="Digite seu Salário..." value=" <?= $funcionario["salario"] ?>  ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Dia de pagamento</label>
-                      <input type="text" class="form-control" name="dia_do_pagamento" placeholder="Digite o dia do seu Pagamento..." value=" <?= $funcionario["dia_do_pagamento"] ?>  ">
+                      <input type="text" class="form-control"  placeholder="Digite o dia do seu Pagamento..." value=" <?= $funcionario["dia_do_pagamento"] ?>  ">
                     </div>
                   </div>
 
-                  <?php if (isset($funcionario)) :  ?>
-                    <input type="hidden" name="id_funcionario" value="<?= $funcionario["id_funcionario"] ?>">
-                  <?php endif; ?>
-
                 </div>
-              </div>
-
-              <div class="card-footer">
-                <button type="submit" class="btn btn-primary"> <?= (isset($funcionario)) ? "Atualizar &nbsp" : "Cadastrar &nbsp" ?> <i class="fas fa-save"></i> </button>
-              </div>
+              </div>            
             </form>
-
           </div>
         </div>
       </div>
