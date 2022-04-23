@@ -1,4 +1,3 @@
-
 <!-- INICIO botao de confirmacao de exclusao -->
 
 <div class="modal fade" id="modal-confirmacao-delete">
@@ -42,8 +41,8 @@
 
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Inicio</a></li>
-            <li class="breadcrumb-item active">Funcionários</li>
+            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
+            <li class="breadcrumb-item active"><i class="nav-icon fas fa-user-tie"></i> &nbsp Funcionários</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -56,8 +55,8 @@
     <div class="container-fluid">
 
       <?php
-        $session = session();
-        $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
+      $session = session();
+      $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
       <?php if (isset($alert)) : ?>
@@ -105,14 +104,10 @@
                   <tr>
                     <th style="width: 10px">Código</th>
                     <th>Nome</th>
-                    <th>Data de Nascimento</th>
-                    <th>RG</th>
                     <th>CPF</th>
-                    <th>Telefone</th>
                     <th>Data de Contratação</th>
+                    <th>Telefone</th>
                     <th>Cargo</th>
-                    <th>Salario</th>
-                    <th>Dia do Pagamento</th>
                     <th>Ações</th>
                   </tr>
                 </thead>
@@ -126,14 +121,11 @@
                       <tr>
                         <td><?= $funcionario["id_funcionario"]      ?></td>
                         <td><?= $funcionario["nome"]                ?></td>
-                        <td><?= $funcionario["data_de_nascimento"]  ?></td>
-                        <td><?= $funcionario["rg"]                  ?></td>
                         <td><?= $funcionario["cpf"]                 ?></td>
-                        <td><?= $funcionario["telefone"]            ?></td>
                         <td><?= $funcionario["data_de_contratacao"] ?></td>
+                        <td><?= $funcionario["telefone"]            ?></td>
                         <td><?= $funcionario["cargo"]               ?></td>
-                        <td><?= $funcionario["salario"]             ?></td>
-                        <td><?= $funcionario["dia_do_pagamento"]    ?></td>
+
                         <td>
                           <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
                           <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>

@@ -10,9 +10,9 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes" class="btn btn-success" style="margin-right: 15px;"> <i class="fas fa-arrow-alt-circle-left"></i>&nbsp Voltar </a>
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes">Clientes</a></li>
-            <li class="breadcrumb-item active">Novo</li>
+            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i> &nbsp Inicio</a></li>
+            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes"><i class="nav-icon fas fa-users"></i> &nbsp Clientes</a></li>
+            <li class="breadcrumb-item active"><i class="nav-icon fas fa-users"></i> &nbspNovo</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->

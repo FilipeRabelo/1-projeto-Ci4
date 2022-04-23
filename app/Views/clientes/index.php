@@ -41,8 +41,8 @@
 
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">Inicio</a></li>
-            <li class="breadcrumb-item active">Clientes</li>
+            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i> &nbsp Inicio</a></li>
+            <li class="breadcrumb-item active"><i class="nav-icon fas fa-users"></i> &nbsp Clientes</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
