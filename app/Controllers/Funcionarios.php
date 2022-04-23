@@ -26,6 +26,18 @@
 
     }
 
+    public function ver($id_funcionario){
+
+      $data["funcionario"] = $this->funcionario_model
+                           ->where("id_funcionario", $id_funcionario)
+                           ->first();      
+
+      echo View('templates/header');
+      echo View('funcionario/ver', $data);
+      echo View('templates/footer');
+
+    }
+
     public function novo(){
 
       echo View("templates/header");
