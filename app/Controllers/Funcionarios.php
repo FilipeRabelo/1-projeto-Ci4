@@ -5,7 +5,7 @@
   use App\Models\FuncionarioModel;
 
   use CodeIgniter\Controller;
-use CodeIgniter\HTTP\Request;
+  use CodeIgniter\HTTP\Request;
 
   class Funcionarios extends Controller{
 

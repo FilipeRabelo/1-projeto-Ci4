@@ -16,6 +16,7 @@
     protected $primeryKey    = "id_produto";
     protected $allowedFields = [             // allowedFields -> Campos permitidos
     // ARRAY PARA COLOCAR TODAS AS COLUNAS DAS MIGRATES
+    
       "id_produto",
       "nome",
       "descricao",
