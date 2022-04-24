@@ -18,13 +18,27 @@
 
     public function index() {
 
-      $data["produtos"] = $this->produto_model->findAll();     
+      $data["produtos"] = $this->produto_model->findAll();     // PARA VER TODOS OS PRODUTOS
 
       echo View("templates/header");
       echo View("produtos/index", $data);
       echo View("templates/footer");
 
     }
+
+
+    public function ver($id_produto){
+
+      $data["produto"] = $this->produto_model->where("id_produto", $id_produto)   // PARA RECUPERAR 1 id ESPECIFICO (produto)
+                                             ->first();
+
+      echo View("templates/header");
+      echo View("produtos/ver", $data);    // mandando o produto para a view ver
+      echo View("templates/footer");
+
+    }
+
+
 
     public function novo() {
 
@@ -33,6 +47,7 @@
       echo View('templates/footer');
 
     }
+
 
 
     public function editar($id_produto){
@@ -45,6 +60,8 @@
       echo View('templates/footer');
 
     }
+
+
 
 
     public function store(){

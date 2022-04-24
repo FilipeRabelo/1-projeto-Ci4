@@ -69,7 +69,7 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-9">
+                  <div class="col-lg-8">
                     <div class="form-group">
                       <label for="">Descricao</label>
                       <input type="text" class="form-control" name="descricao" 
