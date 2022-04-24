@@ -5,6 +5,7 @@
     <div class="modal-content">
 
       <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/delete" method="POST">
+
         <div class="modal-header">
           <h4 class="modal-title">Confirme sua Ação</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -21,6 +22,7 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
           <button type="submit" class="btn btn-primary">Sim</button>
         </div>
+
       </form>
 
     </div>
@@ -95,7 +97,7 @@
 
             <div class="card-header">
               <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/novo" class="btn btn-info">
-                <i class="fas fa-user-plus"></i> &nbsp Novo Produto
+                <i class="fas fa-box-open"></i> &nbsp Novo Produto
               </a>
             </div>
 
@@ -128,16 +130,13 @@
 
 
                         <td>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/ver/<?= $produto["id_produto"] ?>" 
-                             class="btn btn-primary"><i class="fas fa-search"></i>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/ver/<?= $produto["id_produto"] ?>" class="btn btn-primary"><i class="fas fa-search"></i>
                           </a>
 
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/editar/<?= $produto["id_produto"] ?>" 
-                             class="btn btn-warning"><i class="fas fa-edit"></i>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/editar/<?= $produto["id_produto"] ?>" class="btn btn-warning"><i class="fas fa-edit"></i>
                           </a>
 
-                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_produto').value = '<?= $produto['id_produto'] ?>' " 
-                                   data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i>
+                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_produto').value = '<?= $produto['id_produto'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i>
                           </button>
 
                         </td>

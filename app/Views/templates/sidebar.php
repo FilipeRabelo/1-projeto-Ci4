@@ -3,7 +3,7 @@
   <!-- Brand Logo -->
   <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio" class="brand-link">
     <img src="<?= base_url("theme/dist/img/AdminLTELogo.png") ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">All Tech</span>
+    <span class="brand-text font-weight-light"><strong>All Tech</strong></span>
   </a>
 
   <!-- Sidebar -->
@@ -20,7 +20,7 @@
             <!-- <i class="fa-solid fa-house-chimney"></i> -->
             <i class="nav-icon fas fa-home"></i>
             <p>
-              Início
+              <strong>Início</strong>
             </p>
           </a>
         </li>
@@ -29,7 +29,7 @@
           <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes" class="nav-link">
             <i class="nav-icon fas fa-users"></i>
             <p>
-              Clientes
+              <strong>Clientes</strong>
             </p>
           </a>
         </li>
@@ -38,7 +38,7 @@
           <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios" class="nav-link">
             <i class="nav-icon fas fa-user-tie"></i>
             <p>
-              Funcionários
+              <strong>Funcionários</strong>
             </p>
           </a>
         </li>
@@ -47,7 +47,7 @@
           <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos" class="nav-link">
             <i class="nav-icon fas fa-box-open"></i>
             <p>
-              Produtos
+              <strong>Produtos</strong>
             </p>
           </a>
         </li>

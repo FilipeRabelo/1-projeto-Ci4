@@ -91,7 +91,8 @@
         <div class="col lg 12">
           <div class="card">
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> Novo Cliente</a>
+              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" 
+                  class="btn btn-info"> <i class="fas fa-user-plus"></i> &nbsp Novo Cliente</a>
             </div>
 
             <div class="card-body">

@@ -1,6 +1,6 @@
 <!-- INICIO botao de confirmacao de exclusao -->
 
-<div class="modal fade" id="modal-confirmacao-delete">  
+<div class="modal fade" id="modal-confirmacao-delete">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -95,7 +95,7 @@
 
             <div class="card-header">
               <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/novo" class="btn btn-info">
-                <i class="fas fa-user-plus"></i> Novo Funcionário
+                <i class="fas fa-user-plus"></i> &nbsp Novo Funcionário
               </a>
             </div>
 
@@ -129,19 +129,15 @@
                         <td><?= $funcionario["cargo"]               ?></td>
 
                         <td>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" 
-                             class="btn btn-primary"><i class="fas fa-search"></i>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"><i class="fas fa-search"></i>
                           </a>
 
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" 
-                             class="btn btn-warning"><i class="fas fa-edit"></i>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"><i class="fas fa-edit"></i>
                           </a>
 
-                          <button type="button" class="btn btn-danger" 
-                                  onclick="document.getElementById('id_funcionario').value = '<?= $funcionario['id_funcionario'] ?>' " 
-                                  data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i>
+                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_funcionario').value = '<?= $funcionario['id_funcionario'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i>
                           </button>
-                          
+
                         </td>
                       </tr>
 

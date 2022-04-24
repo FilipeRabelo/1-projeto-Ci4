@@ -62,6 +62,21 @@
     }
 
 
+    public function delete(){
+
+      $id_produto = $this->request->getVar("id_produto");
+
+      $this->produto_model->where("id_produto", $id_produto)->delete();
+
+      $session = session();
+      $session->setFlashdata("alert", "sucess_delete");
+
+      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos");
+
+
+    }
+
+
 
 
     public function store(){
