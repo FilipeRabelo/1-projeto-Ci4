@@ -4,7 +4,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
 
-      <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/excluir" method="POST">
+      <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/delete" method="POST">
         <div class="modal-header">
           <h4 class="modal-title">Confirme sua Ação</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -14,7 +14,7 @@
 
         <div class="modal-body">
           <p>Deseja realmente excluir esse Funcionário?</p>
-          <input type="hidden" id="id_cliente" name="id_cliente" value="">
+          <input type="hidden" id="id_funcionario" name="id_funcionario" value="">
         </div>
 
         <div class="modal-footer justify-content-between">
@@ -59,6 +59,8 @@
       $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
+
+      <!-- MENSAGEM DE EXCLUSAO OU ATUALIZAÇÃO -->
       <?php if (isset($alert)) : ?>
 
         <?php if ($alert == 'sucess_create') : ?>
@@ -127,9 +129,9 @@
                         <td><?= $funcionario["cargo"]               ?></td>
 
                         <td>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>
-                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_cliente').value = '<?= $funcionario['id_funcionario'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i></button>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"><i class="fas fa-search"></i></a>
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                          <button type="button" class="btn btn-danger" onclick="document.getElementById('id_funcionario').value = '<?= $funcionario['id_funcionario'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i></button>
                         </td>
                       </tr>
 

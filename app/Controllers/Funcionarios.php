@@ -33,7 +33,7 @@
                            ->first();      
 
       echo View('templates/header');
-      echo View('funcionario/ver', $data);
+      echo View('funcionarios/ver', $data);
       echo View('templates/footer');
 
     }
@@ -56,6 +56,19 @@
       echo View("templates/header");
       echo View("funcionarios/form", $data); // form, nova forma de criar e editar 
       echo View("templates/footer");
+
+    }
+
+    public function delete($id_funcionario){
+
+      $this->funcionario_model
+            ->where("id_funcionario", $id_funcionario)
+            ->delete();
+
+      $session = session();
+      $session->setFlashdata('alert', 'sucess_delete');
+
+      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios");
 
     }
 
