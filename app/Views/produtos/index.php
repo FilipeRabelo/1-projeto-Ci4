@@ -120,7 +120,7 @@
                     <?php foreach ($produtos as $produto) : ?>
 
                       <tr>
-                        <td><?= $produto["id_produto"]      ?></td>
+                        <td><?= $produto["id_produto"]          ?></td>
                         <td><?= $produto["nome"]                ?></td>
                         <td><?= $produto["descricao"]           ?></td>
                         <td><?= $produto["quantidade"]          ?></td>
