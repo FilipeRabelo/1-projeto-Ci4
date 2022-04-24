@@ -10,3 +10,171 @@ CRITICAL - 2022-04-23 19:26:52 --> Too few arguments to function App\Controllers
 #2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `fu...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fu...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fu...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fu...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(69): CodeIgniter\BaseModel->delete()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->delete()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `fu...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fu...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fu...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fu...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(69): CodeIgniter\BaseModel->delete()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->delete()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `fu...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fu...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fu...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fu...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(69): CodeIgniter\BaseModel->delete()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->delete()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `fu...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fu...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fu...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fu...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(69): CodeIgniter\BaseModel->delete()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->delete()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `fu...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fu...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fu...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fu...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(69): CodeIgniter\BaseModel->delete()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->delete()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `fu...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `fu...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `fu...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `fu...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(69): CodeIgniter\BaseModel->delete()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->delete()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-23 19:38:46 --> MySQL server has gone away
+CRITICAL - 2022-04-23 19:38:46 --> MySQL server has gone away
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Funcionarios.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Funcionarios->index()
+#8 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Funcionarios))
+#9 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

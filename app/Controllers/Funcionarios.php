@@ -5,6 +5,7 @@
   use App\Models\FuncionarioModel;
 
   use CodeIgniter\Controller;
+use CodeIgniter\HTTP\Request;
 
   class Funcionarios extends Controller{
 
@@ -59,10 +60,12 @@
 
     }
 
-    public function delete($id_funcionario){
+    public function delete(){
+
+      $id_funcionario = $this->request->getVar("id_funcionario");
 
       $this->funcionario_model
-            ->where("id_funcionario", $id_funcionario)
+            ->where("id_funcionario", $id_funcionario)  // WHERE PARA PROCURAR O ID_FUNCIONARIO
             ->delete();
 
       $session = session();
