@@ -19,7 +19,7 @@ class Produtos extends Controller{
   public function index() {
 
 
-    $data["produtos"] = $this->ProdutoModel->findAll();  
+    $data["produtos"] = $this->ProdutoModel->findAll(); 
 
     
 
@@ -52,31 +52,31 @@ class Produtos extends Controller{
 
 
 
-  public function store(){
+  // public function store(){
 
-    $dados = $this->request->getVar(); 
-    if (isset($dados["id_produto"])) :
+  //   $dados = $this->request->getVar(); 
+  //   if (isset($dados["id_produto"])) :
 
-      $this->produto_model
-        ->where("id_produto", $dados["id_produto"])  
-        ->set($dados)
-        ->update();
+  //     $this->produto_model
+  //       ->where("id_produto", $dados["id_produto"])  
+  //       ->set($dados)
+  //       ->update();
 
-      $session = session();
-      $session->setFlashdata('alert', 'sucess_update');
+  //     $session = session();
+  //     $session->setFlashdata('alert', 'sucess_update');
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/editar/{$dados['id_produto']}");
+  //     return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/editar/{$dados['id_produto']}");
 
-    endif;
+  //   endif;
 
-    $this->produto_model->insert($dados);    
+  //   $this->produto_model->insert($dados);    
 
-    $session = session();
-    $session->setFlashdata('alert', 'sucess_create');
+  //   $session = session();
+  //   $session->setFlashdata('alert', 'sucess_create');
 
-    return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos");      
+  //   return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos");      
 
-  }
+  // }
 
 }
 

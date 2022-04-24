@@ -432,3 +432,77 @@ CRITICAL - 2022-04-23 22:55:04 --> Call to a member function findAll() on null
 #2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-04-23 23:30:50 --> Undefined variable $produtos
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Produtos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 23:31:44 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:31:46 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:31:46 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:31:47 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:31:47 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:31:47 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:33:35 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:33:43 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:34:18 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:34:20 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 23:34:40 --> Undefined variable $produtos
+#0 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\app\Controllers\Produtos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#2 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#3 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
