@@ -47,7 +47,7 @@ use CodeIgniter\Database\Migration;
           "type"             => "DOUBLE"          
         ],
 
-        "validade"          => [
+        "validade"           => [
           "type"             => "DATE"
         ],     
 

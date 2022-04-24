@@ -12,16 +12,13 @@ class Produtos extends Controller{
 
   function __construct()  {
 
-    $this->ProdutoModel = new ProdutoModel;
+    $this->produto_model = new ProdutoModel;
 
   }
 
   public function index() {
 
-
-    $data["produtos"] = $this->ProdutoModel->findAll(); 
-
-    
+    $data["produtos"] = $this->produto_model->findAll();     
 
     echo View("templates/header");
     echo View("produtos/index", $data);
