@@ -53,7 +53,7 @@
 
     public function down() {
 
-       $this->forge->dropTable("logins");
+      $this->forge->dropTable("logins");
 
     }
 
