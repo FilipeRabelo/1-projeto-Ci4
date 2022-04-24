@@ -64,7 +64,7 @@
                   <div class="col-lg-6">
                     <div class="form-group">
                       <label for="">Nome</label>
-                      <input type="text" class="form-control" name="nome" placeholder="Digite seu Nome..." 
+                      <input type="text" class="form-control" name="nome"  
                             value=" <?= (isset($produto)) ? $produto["nome"] : "" ?> ">
                     </div>
                   </div>
@@ -72,15 +72,15 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Descricao</label>
-                      <input type="date" class="form-control" name="quantidade" 
-                              placeholder="Degite a descrição..." value=" <?= (isset($produto)) ? $produto["quantidade"] : "" ?> ">
+                      <input type="text" class="form-control" name="descricao" 
+                             value=" <?= (isset($produto)) ? $produto["descricao"] : "" ?> ">
                     </div>
                   </div>
 
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Quantidade</label>
-                      <input type="text" class="form-control" name="quantidade" placeholder="Digite a quantidade..." 
+                      <input type="text" class="form-control" name="quantidade"  
                             value=" <?= (isset($produto)) ? $produto["quantidade"] : "" ?> ">
                     </div>
                   </div>
@@ -88,7 +88,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Quantidade mínima</label>
-                      <input type="text" class="form-control" name="quantidade_minima" placeholder="Digite a quantidade mínima..."
+                      <input type="text" class="form-control" name="quantidade_minima" 
                               value=" <?= (isset($produto)) ? $produto["quantidade_minima"] : "" ?> ">
                     </div>
                   </div>
@@ -96,7 +96,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Valor de compra</label>
-                      <input type="text" class="form-control" name="valor_de_compra" placeholder="Digite o valor da compra..." 
+                      <input type="text" class="form-control" name="valor_de_compra"  
                             value=" <?= (isset($produto)) ? $produto["valor_de_compra"] : "" ?> ">
                     </div>
                   </div>
@@ -104,7 +104,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Valor de venda</label>
-                      <input type="date" class="form-control" name="valor_de_venda" placeholder="Digite o valor da compra..."
+                      <input type="text" class="form-control" name="valor_de_venda" 
                              value=" <?= (isset($produto)) ? $produto["valor_de_venda"] : "" ?> ">
                     </div>
                   </div>
@@ -112,7 +112,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Margem de lucro</label>
-                      <input type="text" class="form-control" name="margem_de_lucro" placeholder="Digite a margem do lucro..." 
+                      <input type="text" class="form-control" name="margem_de_lucro"  
                             value=" <?= (isset($produto)) ? $produto["margem_de_lucro"] : "" ?> ">
                     </div>
                   </div>
@@ -120,7 +120,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Validade</label>
-                      <input type="text" class="form-control" name="validade" placeholder="Digite a validade..." 
+                      <input type="text" class="form-control" name="validade" 
                               value=" <?= (isset($produto)) ? $produto["validade"] : "" ?> ">
                     </div>
                   </div>

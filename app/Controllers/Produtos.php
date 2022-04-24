@@ -25,24 +25,10 @@ class Produtos extends Controller{
     echo View("templates/footer");
   }
 
-  // public function index()  {
-
-  //   $produtos = $this->produto_model->findAll(); 
-
-  //   $data["produtos"] = $produtos;
-
-  //   echo View('templates/header');
-  //   echo View('produtos/index', $data);
-  //   echo View('templates/footer');
-
-  // }
-
-
-
   public function novo() {
 
     echo View('templates/header');
-    echo View('produtos/novo');
+    echo View('produtos/form');
     echo View('templates/footer');
 
   }
