@@ -132,7 +132,7 @@
                              class="btn btn-primary"><i class="fas fa-search"></i>
                           </a>
 
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produto/editar/<?= $produto["id_produto"] ?>" 
+                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/editar/<?= $produto["id_produto"] ?>" 
                              class="btn btn-warning"><i class="fas fa-edit"></i>
                           </a>
 

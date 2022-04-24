@@ -61,7 +61,7 @@
 
                 <div class="row">
 
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                     <div class="form-group">
                       <label for="">Nome</label>
                       <input type="text" class="form-control" name="nome"  
@@ -69,7 +69,7 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-3">
+                  <div class="col-lg-9">
                     <div class="form-group">
                       <label for="">Descricao</label>
                       <input type="text" class="form-control" name="descricao" 
@@ -120,7 +120,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Validade</label>
-                      <input type="text" class="form-control" name="validade" 
+                      <input type="date" class="form-control" name="validade" 
                               value=" <?= (isset($produto)) ? $produto["validade"] : "" ?> ">
                     </div>
                   </div>
@@ -135,7 +135,8 @@
 
               <div class="card-footer">
                 <button type="submit" class="btn btn-primary"> <?= (isset($produto)) ? "Atualizar &nbsp" : "Cadastrar &nbsp" ?> <i 
-                        class="fas fa-save"></i> </button>
+                        class="fas fa-save"></i> 
+                </button>
               </div>
             </form>
 
