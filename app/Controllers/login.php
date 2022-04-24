@@ -48,7 +48,20 @@
 
       //SE NAO EXISTIR USUARIO
 
-      $session->setFlashdata("alert", "erro_login");
+      $session->setFlashdata("alert", "error_login");
+
+      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login");
+
+    }
+
+
+    // PARA SAIR DA SESSAO
+
+    public function logout(){
+
+      $session = session();
+
+      $session->destroy();
 
       return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login");
 

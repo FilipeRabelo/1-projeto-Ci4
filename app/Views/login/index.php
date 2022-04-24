@@ -1,3 +1,13 @@
+<?php 
+
+  $session = session();
+
+  $alert   = $session->get("alert");
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -32,7 +42,11 @@
 
         <div class="card-body">
 
-          <p class="login-box-msg">Entre com seu usuário e senha</p>
+
+          <!-- SE SENHA OU USUARIO ESTIVEREM ERRADOS -->
+          <p class="login-box-msg">
+            <?= (isset($alert) && $alert == "error_login" ) ? "Usuário ou senha incorretos" : "Entre com seu usuário e senha" ?>
+          </p>
 
           <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/login/autenticar" method="post">
 
