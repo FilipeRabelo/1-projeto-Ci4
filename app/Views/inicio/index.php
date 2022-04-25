@@ -1,11 +1,10 @@
 <?php
 
-$session = session();
+  $session = session();
 
-$primeiro_nome = $session->get("primeiro_nome");
+  $primeiro_nome = $session->get("primeiro_nome");
 
 ?>
-
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -55,8 +54,8 @@ $primeiro_nome = $session->get("primeiro_nome");
             <span class="info-box-icon bg-success"><i class="fas fa-user-tie"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Funcionarios</span>
-              <span class="info-box-number">410</span>
+              <span class="info-box-text">Funcionários</span>
+              <span class="info-box-number"><?= $total_de_funcionarios ?></span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -71,7 +70,7 @@ $primeiro_nome = $session->get("primeiro_nome");
 
             <div class="info-box-content">
               <span class="info-box-text">Produtos</span>
-              <span class="info-box-number">13,648</span>
+              <span class="info-box-number"><?= $total_de_produtos ?></span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -79,10 +78,12 @@ $primeiro_nome = $session->get("primeiro_nome");
         </div>
         <!-- /.col -->
 
-      </div>
 
-    </div>
-  </div>
-  <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+
+      </div> <!-- FIM DIV ROW -->
+
+    </div> <!-- FIM div class="container-fluid" -->
+
+  </div> <!-- /.content -->
+
+</div> <!-- /.content-wrapper -->
