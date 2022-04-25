@@ -1,3 +1,24 @@
+<?php 
+
+  // REGLA DE VALIDAÇÂO
+
+  $session = session();
+
+  $primeiro_nome = $session->get("primeiro_nome");
+
+  if($primeiro_nome == null):
+
+    echo "    
+      <script>
+        alert('Acesse sua Conta para Continuar');
+        window.location.href = 'http://localhost/curso-Ci4/1-projeto-Ci4/public/login';
+      </script>    
+    ";
+
+  endif;
+
+?>
+
 <!DOCTYPE html>
 <!--
     This is a starter template page. Use this page to start your new project from
