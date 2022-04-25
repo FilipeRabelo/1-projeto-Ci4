@@ -52,6 +52,15 @@
           </a>
         </li>
 
+        <li class="nav-item">
+          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/login/trocaSenha" class="nav-link">
+            <i class="nav-icon fas fa-user-lock"></i>
+            <p>
+              <strong>Trocar Senha</strong>
+            </p>
+          </a>
+        </li>
+
       </ul>
 
     </nav>
