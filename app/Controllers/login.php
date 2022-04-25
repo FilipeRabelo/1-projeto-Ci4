@@ -29,7 +29,7 @@
 
       $usuario = $this->login_model
                       ->where("usuario", $dados["usuario"])
-                      ->where( "senha" , $dados["senha"])  // VERIFICANDO SE DADOS CORRESPONDEN AOS DADOS CADASTRADOS NO BD
+                      ->where( "senha" , md5($dados["senha"]))  // VERIFICANDO SE DADOS CORRESPONDEN AOS DADOS CADASTRADOS NO BD
                       ->first();
 
       //SE EXISTIR USUARIO
@@ -68,16 +68,18 @@
     }
 
     // TROCAR A SENHA
+    //CRIPTOGRAFANDO SENHA
 
     public function trocarSenha(){
 
       echo View("templates/header");
       echo View("login/trocar_senha");
-      echo View("templates/footer");
+      echo View("templates/footer");      
 
     }
 
     //VERIFICAR OS DADOS PARA FAZER A TROCA //
+    //senha criptografada
 
     public function store(){
 
@@ -89,12 +91,12 @@
 
       $session = session();
       
-      if($dados["senha_atual"] == $usuario["senha"]):
+      if(md5($dados["senha_atual"]) == $usuario["senha"]):
 
-        if($dados["nova_senha"]  == $dados["confirmar_nova_senha"]):
+        if($dados["nova_senha"] == $dados["confirmar_nova_senha"]):
 
           $this->login_model->where("id_login", 1)
-                            ->set("senha", $dados["nova_senha"])
+                            ->set("senha", md5($dados["nova_senha"]))
                             ->update();
 
           
