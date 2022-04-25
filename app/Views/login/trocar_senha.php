@@ -28,10 +28,10 @@
   <div class="content">
     <div class="container-fluid">
 
-      <!-- INICIO ATUALIZANDO O FUNCIOANRIO -->
+      <!-- INICIO ATUALIZANDO a senha -->
       <?php
-        $session = session();
-        $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
+      $session = session();
+      $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
       <?php if (isset($alert)) : ?>
@@ -42,7 +42,21 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Senha Atualizada com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Senha Atualizada com Sucesso!
+              </div>
+            </div>
+          </div>
+
+        <?php elseif ($alert == 'error_trocar_senha') : ?>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <!-- <i class="fa-solid fa-xmark-large"></i> -->
+                <i class="fa-solid fa-xmark"></i>
+                &nbsp Erro ao Atualizar Senha, Verifique os dados Digitados!
               </div>
             </div>
           </div>
@@ -50,7 +64,7 @@
         <?php endif; ?>
 
       <?php endif; ?>
-      <!-- FIM ATUALIZANDO O FUNCIOANRIO -->
+      <!-- FIM ATUALIZANDO a senha -->
 
       <div class="row">
         <div class="col-lg-12">
@@ -89,7 +103,7 @@
               </div>
 
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary"> <i class="fas fa-user-lock"></i> &nbsp&nbsp Atualizar Senha</button>
+                <button type="submit" class="btn btn-primary"> Atualizar Senha &nbsp&nbsp<i class="fas fa-save"></i> </button>
               </div>
 
             </form>

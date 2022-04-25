@@ -30,15 +30,16 @@
       $alert   = $session->get("alert");  // VARIAVEL alert RECUPERADA DO CONTROLLER
       ?>
 
-      <?php if (isset($alert)): ?>
+      <?php if (isset($alert)) : ?>
 
-        <?php if ($alert == 'sucess_update'): ?>
+        <?php if ($alert == 'sucess_update') : ?>
 
           <div class="row">
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Funcionário Atualizado com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Funcionário Atualizado com sucesso!
               </div>
             </div>
           </div>

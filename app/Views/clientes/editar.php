@@ -37,7 +37,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Cliente atualizado com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Cliente atualizado com sucesso!
               </div>
             </div>
           </div>
