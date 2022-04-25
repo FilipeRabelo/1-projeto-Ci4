@@ -69,7 +69,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Funcionário cadastrado com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Funcionário cadastrado com sucesso!
               </div>
             </div>
           </div>
@@ -80,7 +81,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Funcionário excluído com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Funcionário excluído com sucesso!
               </div>
             </div>
           </div>

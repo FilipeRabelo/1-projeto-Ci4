@@ -41,7 +41,7 @@ $primeiro_nome = $session->get("primeiro_nome");
 
             <div class="info-box-content">
               <span class="info-box-text">Clientes</span>
-              <span class="info-box-number">1,410</span>
+              <span class="info-box-number"><?= $total_de_clientes ?></span>
             </div>
             <!-- /.info-box-content -->
           </div>

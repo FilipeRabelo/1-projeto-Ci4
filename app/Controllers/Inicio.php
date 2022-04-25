@@ -1,20 +1,36 @@
 <?php    
     
-    namespace App\Controllers;
+  namespace App\Controllers;
 
-    use CodeIgniter\Config\View;
-    use CodeIgniter\Controller;
+  use App\Models\ClienteModel;
+  use CodeIgniter\Controller;
 
-    class Inicio extends Controller
-    {
+  class Inicio extends Controller {
 
-        public function index()
-        {
+    private $cliente_model;
 
-            echo View("templates/header");
-            echo View("inicio/index");
-            echo View("templates/footer");
-        }
+    function __construct(){
+      
+      $this->cliente_model = new ClienteModel();
+
     }
+
+    public function index() {
+
+      $total_de_clientes = count(
+
+        $this->cliente_model->findAll()  
+
+      );
+
+      $data["total_de_clientes"] = $total_de_clientes;
+
+      echo View("templates/header");
+      echo View("inicio/index", $data);
+      echo View("templates/footer");
+
+    }
+
+  }
 
 ?>

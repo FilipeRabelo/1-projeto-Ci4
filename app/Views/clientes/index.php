@@ -67,7 +67,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Cliente cadastrado com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Cliente cadastrado com sucesso!
               </div>
             </div>
           </div>
@@ -78,7 +79,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Cliente excluído com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Cliente excluído com sucesso!
               </div>
             </div>
           </div>
@@ -91,8 +93,7 @@
         <div class="col lg 12">
           <div class="card">
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" 
-                  class="btn btn-info"> <i class="fas fa-user-plus"></i> &nbsp Novo Cliente</a>
+              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> &nbsp Novo Cliente</a>
             </div>
 
             <div class="card-body">

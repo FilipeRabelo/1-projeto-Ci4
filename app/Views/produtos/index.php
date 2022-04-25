@@ -71,7 +71,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Produto cadastrado com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbspProduto cadastrado com sucesso!
               </div>
             </div>
           </div>
@@ -82,7 +83,8 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Produto excluído com sucesso!
+                <i class="fa-solid fa-check"></i>
+                &nbsp Produto excluído com sucesso!
               </div>
             </div>
           </div>
