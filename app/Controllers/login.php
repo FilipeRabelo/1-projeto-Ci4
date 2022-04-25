@@ -67,6 +67,53 @@
 
     }
 
+    // TROCAR A SENHA
+
+    public function trocarSenha(){
+
+      echo View("templates/header");
+      echo View("login/trocar_senha");
+      echo View("templates/footer");
+
+    }
+
+    //VERIFICAR OS DADOS PARA FAZER A TROCA //
+
+    public function store(){
+
+      $dados = $this->request->getVar();      
+
+      $usuario = $this->login_model
+                      ->where("id_login", 1)
+                      ->first();
+
+      $session = session();
+      
+      if($dados["senha_atual"] == $usuario["senha"]):
+
+        if($dados["nova_senha"]  == $dados["confirmar_nova_senha"]):
+
+          $this->login_model->where("id_login", 1)
+                            ->set("senha", $dados["nova_senha"])
+                            ->update();
+
+          
+          $session->setFlashdata("alert", "sucess_trocar_senha");
+
+          return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login/trocarSenha");          
+
+        endif;
+
+      endif;
+
+      // SE DER ERRO //
+
+      $session->setFlashdata("alert", "error_trocar_senha");
+
+      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login/trocarSenha");   
+
+    }
+
   }
 
 ?>
