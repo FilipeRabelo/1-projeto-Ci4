@@ -24,7 +24,6 @@
 
     public function index() {
 
-
       $total_de_clientes = count(
 
         $this->cliente_model->findAll() 
@@ -42,7 +41,6 @@
         $this->produto_model->findAll()
 
       );
-
 
       $data["total_de_clientes"]     = $total_de_clientes;
       $data["total_de_funcionarios"] = $total_de_funcionarios;

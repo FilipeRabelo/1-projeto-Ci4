@@ -81,55 +81,97 @@ $primeiro_nome = $session->get("primeiro_nome");
       </div> <!-- FIM DIV ROW -->
 
       <div class="row">
-        <div class="card card-info">
-          <div class="card-header">
-            <h3 class="card-title">Gráfico de Barra</h3>
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="chart">
-              <!-- <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas> -->
-              <canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Gráfico de Barras</h3>
 
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="chart">
+                <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
         </div>
-      </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Gráfico de Pizza</h3>
 
-    </div> <!-- FIM div class="container-fluid" -->
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="chart">
+                <canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
+              </div>
+            </div>
 
-  </div> <!-- /.content -->
+          </div>
+        </div>
 
-</div> <!-- /.content-wrapper -->
+      </div> <!-- FIM div class="container-fluid" -->
 
-<script>
-  new Chart(document.getElementById("chartjs-1"), {
-    "type": "bar",
-    "data": {
-      "labels": ["Clientes", "Funcionários", "Produtos"],
-      "datasets": [{
-        "label": "Total",
-        "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
-        "fill": false,
-        "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
-        "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
-        "borderWidth": 1
-      }]
-    },
-    "options": {
-      "scales": {
-        "yAxes": [{
-          "ticks": {
-            "beginAtZero": true
-          }
+    </div> <!-- /.content -->
+
+  </div> <!-- /.content-wrapper -->
+
+  <script>
+    new Chart(document.getElementById("chartjs-1"), {
+      "type": "bar",
+      "data": {
+        "labels": ["Clientes", "Funcionários", "Produtos"],
+        "datasets": [{
+          "label": "Total",
+          "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
+          "fill": false,
+          "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
+          "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
+          "borderWidth": 1
+        }]
+      },
+      "options": {
+        "scales": {
+          "yAxes": [{
+            "ticks": {
+              "beginAtZero": true
+            }
+          }]
+        }
+      }
+    });
+
+    new Chart(document.getElementById("chartjs-4"), {
+      "type": "doughnut",
+      "data": {
+        "labels": ["Clientes", "Funcionários", "Produtos"],
+        "datasets": [{
+          "label": "Total",
+          "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
+          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
         }]
       }
-    }
-  });
+    });
+  </script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" 
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script> -->
