@@ -1,21 +1,21 @@
-<?php 
+<?php
 
-  // REGLA DE VALIDAÇÂO
+// REGLA DE VALIDAÇÂO
 
-  $session = session();
+$session = session();
 
-  $primeiro_nome = $session->get("primeiro_nome");
+$primeiro_nome = $session->get("primeiro_nome");
 
-  if($primeiro_nome == null):
+if ($primeiro_nome == null) :
 
-    echo "    
+  echo "    
       <script>
         alert('Acesse sua Conta para Continuar');
         window.location.href = 'http://localhost/curso-Ci4/1-projeto-Ci4/public/login';
       </script>    
     ";
 
-  endif;
+endif;
 
 ?>
 
@@ -37,15 +37,16 @@
 
   <!-- Font Awesome Icons -->
   <!-- <link rel="stylesheet" href="<?= base_url('theme/plugins/fontawesome-free/css/all.min.css') ?>"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" 
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url("theme/dist/css/adminlte.min.css") ?>">
   <!--tem q colocar o THEME -->
+
+  <!-- JS -->
+  <script src=" <?= base_url('http://localhost/curso-Ci4/1-projeto-Ci4/public/assets/js/Chart.js') ?> "> </script>
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -53,3 +54,5 @@
 
     <?php include_once("navbar.php")  ?>
     <?php include_once("sidebar.php") ?>
+
+    <!-- <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>  -->

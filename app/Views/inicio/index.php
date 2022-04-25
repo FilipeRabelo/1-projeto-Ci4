@@ -1,8 +1,8 @@
 <?php
 
-  $session = session();
+$session = session();
 
-  $primeiro_nome = $session->get("primeiro_nome");
+$primeiro_nome = $session->get("primeiro_nome");
 
 ?>
 
@@ -78,9 +78,30 @@
         </div>
         <!-- /.col -->
 
-
-
       </div> <!-- FIM DIV ROW -->
+
+      <div class="row">
+        <div class="card card-info">
+          <div class="card-header">
+            <h3 class="card-title">Gráfico de Barra</h3>
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart">
+              <!-- <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas> -->
+              <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div> <!-- FIM div class="container-fluid" -->
 
