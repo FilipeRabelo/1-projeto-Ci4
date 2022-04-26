@@ -46,7 +46,7 @@
             <?= (isset($alert) && $alert == "error_login" ) ? "<span style='color:red'>Usuário ou senha incorretos</span>" : "Entre com seu usuário e senha" ?>
           </p>
 
-          <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/login/autenticar" method="post">
+          <form action="/login/autenticar" method="post">
 
             <div class="input-group mb-3">
               <input type="text" class="form-control" name="usuario" placeholder="Usuário" required>

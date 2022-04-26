@@ -9,9 +9,9 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos" class="btn btn-success" style="margin-right: 15px;"> <i class="fas fa-arrow-alt-circle-left"></i>&nbsp Voltar </a>
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos"><i class="nav-icon fas fa-box-open"></i> &nbsp Produtos</a></li>
+            <a href="/produtos" class="btn btn-success" style="margin-right: 15px;"> <i class="fas fa-arrow-alt-circle-left"></i>&nbsp Voltar </a>
+            <li class="breadcrumb-item"><a href="/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/produtos"><i class="nav-icon fas fa-box-open"></i> &nbsp Produtos</a></li>
             <li class="breadcrumb-item active"><i class="nav-icon fas fa-box-open"></i> &nbsp Dados</li>
           </ol>
         </div><!-- /.col -->

@@ -71,7 +71,7 @@
       $session = session();
       $session->setFlashdata("alert", "sucess_delete");
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos");
+      return redirect()->to("/produtos");
 
 
     }
@@ -96,7 +96,7 @@
         // $session = session();
         $session->setFlashdata('alert', 'sucess_update');
 
-        return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos/editar/{$dados['id_produto']}");
+        return redirect()->to("/produtos/editar/{$dados['id_produto']}");
 
       endif;
 
@@ -105,7 +105,7 @@
       // $session = session();
       $session->setFlashdata('alert', 'sucess_create');
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/produtos");      
+      return redirect()->to("/produtos");      
 
     }
 

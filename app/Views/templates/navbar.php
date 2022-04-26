@@ -19,7 +19,7 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="http://localhost/curso-Ci4/1-projeto-Ci4/public/login/logout">
+      <a class="nav-link" href="/login/logout">
         Sair &nbsp<i class="fa-solid fa-person-walking-arrow-right"></i>
       </a>
     </li>

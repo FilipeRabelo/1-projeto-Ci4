@@ -5,7 +5,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
 
-      <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/excluir" method="POST">
+      <form action="/clientes/excluir" method="POST">
         <div class="modal-header">
           <h4 class="modal-title">Confirme sua Ação</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -41,7 +41,7 @@
 
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i> &nbsp Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/inicio"><i class="nav-icon fas fa-home"></i> &nbsp Inicio</a></li>
             <li class="breadcrumb-item active"><i class="nav-icon fas fa-users"></i> &nbsp Clientes</li>
           </ol>
         </div><!-- /.col -->
@@ -93,7 +93,7 @@
         <div class="col lg 12">
           <div class="card">
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> &nbsp Novo Cliente</a>
+              <a href="/clientes/novo" class="btn btn-info"> <i class="fas fa-user-plus"></i> &nbsp Novo Cliente</a>
             </div>
 
             <div class="card-body">
@@ -124,8 +124,8 @@
                         <td><?= $cliente["endereco"]           ?></td>
                         <td><?= $cliente["limite_de_credito"]  ?></td>
                         <td>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/ver/<?= $cliente["id_cliente"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>
+                          <a href="/clientes/ver/<?= $cliente["id_cliente"] ?>" class="btn btn-primary"> <i class="fas fa-search"></i> </a>
+                          <a href="/clientes/editar/<?= $cliente["id_cliente"] ?>" class="btn btn-warning"> <i class="fas fa-edit"></i> </a>
                           <button type="button" class="btn btn-danger" onclick="document.getElementById('id_cliente').value = '<?= $cliente['id_cliente'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i></button>
                         </td>
                       </tr>

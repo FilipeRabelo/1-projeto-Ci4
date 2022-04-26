@@ -64,7 +64,7 @@
       $session->setFlashdata('alert', 'sucess_delete');
 
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");
+      return redirect()->to("/clientes");
     }
 
     //VER CADASTRO
@@ -97,7 +97,7 @@
         $session = session();
         $session->setFlashdata('alert', 'sucess_update');
 
-        return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes/editar/{$dados['id_cliente']}");
+        return redirect()->to("/clientes/editar/{$dados['id_cliente']}");
 
       endif;
 
@@ -106,7 +106,7 @@
       $session = session();
       $session->setFlashdata('alert', 'sucess_create');
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/clientes");  // AQUI EU REDIRECIONO PARA A URL
+      return redirect()->to("/clientes");  // AQUI EU REDIRECIONO PARA A URL
 
       #me atendar as palavras no plural
 

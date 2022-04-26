@@ -71,7 +71,7 @@
       $session = session();
       $session->setFlashdata('alert', 'sucess_delete');
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios");
+      return redirect()->to("/funcionarios");
 
     }
 
@@ -88,7 +88,7 @@
 
         $session->setFlashdata("alert", "sucess_update");
 
-        return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/{$dados['id_funcionario']}");
+        return redirect()->to("/funcionarios/editar/{$dados['id_funcionario']}");
 
       endif;
 
@@ -97,7 +97,7 @@
       
         $session->setFlashdata("alert", "sucess_create");
 
-        return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios");
+        return redirect()->to("/funcionarios");
 
     }
 

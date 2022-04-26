@@ -4,7 +4,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
 
-      <form action="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/delete" method="POST">
+      <form action="/funcionarios/delete" method="POST">
         <div class="modal-header">
           <h4 class="modal-title">Confirme sua Ação</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -41,7 +41,7 @@
 
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
             <li class="breadcrumb-item active"><i class="nav-icon fas fa-user-tie"></i> &nbsp Funcionários</li>
           </ol>
         </div><!-- /.col -->
@@ -96,7 +96,7 @@
           <div class="card">
 
             <div class="card-header">
-              <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/novo" class="btn btn-info">
+              <a href="/funcionarios/novo" class="btn btn-info">
                 <i class="fas fa-user-plus"></i> &nbsp Novo Funcionário
               </a>
             </div>
@@ -131,10 +131,10 @@
                         <td><?= $funcionario["cargo"]               ?></td>
 
                         <td>
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"><i class="fas fa-search"></i>
+                          <a href="/funcionarios/ver/<?= $funcionario["id_funcionario"] ?>" class="btn btn-primary"><i class="fas fa-search"></i>
                           </a>
 
-                          <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"><i class="fas fa-edit"></i>
+                          <a href="/funcionarios/editar/<?= $funcionario["id_funcionario"] ?>" class="btn btn-warning"><i class="fas fa-edit"></i>
                           </a>
 
                           <button type="button" class="btn btn-danger" onclick="document.getElementById('id_funcionario').value = '<?= $funcionario['id_funcionario'] ?>' " data-toggle="modal" data-target="#modal-confirmacao-delete"><i class="fas fa-trash"></i>

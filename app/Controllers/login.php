@@ -42,7 +42,7 @@
 
         $session->setFlashdata("alert", "sucess_login");
 
-        return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio");
+        return redirect()->to("/inicio");
 
       endif;
 
@@ -50,7 +50,7 @@
 
       $session->setFlashdata("alert", "error_login");
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login");
+      return redirect()->to("/login");
 
     }
 
@@ -63,7 +63,7 @@
 
       $session->destroy();
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login");
+      return redirect()->to("/login");
 
     }
 
@@ -102,7 +102,7 @@
           
           $session->setFlashdata("alert", "sucess_trocar_senha");
 
-          return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login/trocarSenha");          
+          return redirect()->to("/login/trocarSenha");          
 
         endif;
 
@@ -112,7 +112,7 @@
 
       $session->setFlashdata("alert", "error_trocar_senha");
 
-      return redirect()->to("http://localhost/curso-Ci4/1-projeto-Ci4/public/login/trocarSenha");   
+      return redirect()->to("/login/trocarSenha");   
 
     }
 

@@ -10,7 +10,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
 
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio">
+            <li class="breadcrumb-item"><a href="/inicio">
                 <i class="nav-icon fas fa-home"></i>&nbsp Inicio</a>
             </li>
             <li class="breadcrumb-item active">
@@ -74,7 +74,7 @@
               <h3 class="card-title">Dados</h3>
             </div>
 
-            <form action=" http://localhost/curso-Ci4/1-projeto-Ci4/public/login/store" method="POST">
+            <form action="/login/store" method="POST">
               <div class="card-body">
                 <div class="row">
 

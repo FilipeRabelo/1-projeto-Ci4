@@ -9,9 +9,9 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios" class="btn btn-success" style="margin-right: 15px;"> <i class="fas fa-arrow-alt-circle-left"></i>&nbsp Voltar </a>
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
-            <li class="breadcrumb-item"><a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios"><i class="nav-icon fas fa-user-tie"></i> &nbsp Funcionários</a></li>
+            <a href="/funcionarios" class="btn btn-success" style="margin-right: 15px;"> <i class="fas fa-arrow-alt-circle-left"></i>&nbsp Voltar </a>
+            <li class="breadcrumb-item"><a href="/inicio"><i class="nav-icon fas fa-home"></i>&nbsp Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/funcionarios"><i class="nav-icon fas fa-user-tie"></i> &nbsp Funcionários</a></li>
             <li class="breadcrumb-item active"><i class="nav-icon fas fa-user-tie"></i> &nbsp Novo</li>
           </ol>
         </div><!-- /.col -->
@@ -57,7 +57,7 @@
               <h3 class="card-title">Dados Pessoais</h3>
             </div>
 
-            <form action=" http://localhost/curso-Ci4/1-projeto-Ci4/public/funcionarios/store" method="POST">
+            <form action="/funcionarios/store" method="POST">
               <div class="card-body">
 
                 <div class="row">

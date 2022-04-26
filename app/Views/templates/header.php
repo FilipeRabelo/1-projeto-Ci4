@@ -11,7 +11,7 @@ if ($primeiro_nome == null) :
   echo "    
       <script>
         alert('Acesse sua Conta para Continuar');
-        window.location.href = 'http://localhost/curso-Ci4/1-projeto-Ci4/public/login';
+        window.location.href = '/login';
       </script>    
     ";
 
@@ -49,7 +49,7 @@ endif;
   <!--tem q colocar o THEME -->
 
   <!-- JS -->
-  <script src=" <?= base_url('http://localhost/curso-Ci4/1-projeto-Ci4/public/assets/js/Chart.js') ?> "> </script>
+  <script src=" <?= base_url('/assets/js/Chart.js') ?> "> </script>
   <!-- C:\xampp\htdocs\curso-Ci4\1-projeto-Ci4\public\assets\js -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
