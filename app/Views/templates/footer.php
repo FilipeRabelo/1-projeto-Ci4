@@ -9,7 +9,8 @@
 <!-- /.control-sidebar -->
 
 <!-- Main Footer -->
-<footer class="main-footer " style="background-color: #17a2b8; color: black">
+<footer class="main-footer layout-fixed " style="background-color: #17a2b8; color: black" >
+  <!--  -->
   <!-- To the right -->
   <div class=" float-right d-none d-sm-inline">
     <strong>Dev. <a href="https://www.linkedin.com/in/filipe-rabelo-lana-648799228/" target="_blank">Filipe Rabelo</a> </strong>
