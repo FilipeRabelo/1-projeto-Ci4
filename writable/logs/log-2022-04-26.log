@@ -10,3 +10,23 @@ CRITICAL - 2022-04-26 21:01:21 --> The framework needs the following extension(s
 #2 C:\xampp\htdocs\1-projeto-Ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
 #3 C:\xampp\htdocs\1-projeto-Ci4\public\index.php(28): require('C:\\xampp\\htdocs...')
 #4 {main}
+CRITICAL - 2022-04-26 22:59:59 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\1-projeto-Ci4\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\1-projeto-Ci4\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\1-projeto-Ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp\htdocs\1-projeto-Ci4\public\index.php(28): require('C:\\xampp\\htdocs...')
+#4 {main}
+ERROR - 2022-04-26 16:14:41 --> Error connecting to the database: Unknown database 'projeto-modulo-2'
+CRITICAL - 2022-04-26 16:14:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'projeto-modulo-2'
+#0 C:\xampp\htdocs\1-projeto-Ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\1-projeto-Ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\1-projeto-Ci4\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\1-projeto-Ci4\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\1-projeto-Ci4\app\Controllers\Inicio.php(29): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\1-projeto-Ci4\system\CodeIgniter.php(832): App\Controllers\Inicio->index()
+#6 C:\xampp\htdocs\1-projeto-Ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#7 C:\xampp\htdocs\1-projeto-Ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\1-projeto-Ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\1-projeto-Ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
