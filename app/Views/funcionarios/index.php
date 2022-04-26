@@ -102,7 +102,7 @@
             </div>
 
             <div class="card-body">
-              <table class="table table-bordered">
+              <table id="example1" class="table table-bordered">
 
                 <thead>
                   <tr>
