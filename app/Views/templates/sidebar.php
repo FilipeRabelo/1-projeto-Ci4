@@ -1,8 +1,8 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4 " style="background-color: #17a2b8;">
+<aside class="main-sidebar sidebar-dark-primary navbar-light elevation-4 " style="background-color: #17a2b8;">
   <!-- Brand Logo -->
-  <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio" class="brand-link">
-    <img src="<?= base_url("theme/dist/img/AdminLTELogo.png") ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+  <a href="http://localhost/curso-Ci4/1-projeto-Ci4/public/inicio" class="brand-link " style="background-color: #17a2b8">
+    <img src=" <?= base_url("theme/dist/img/AdminLTELogo.png") ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light"><strong>All Tech</strong></span>
   </a>
 
