@@ -2,7 +2,7 @@
 
 $session = session();
 
-$primeiro_nome = $session->get("primeiro_nome");
+$primeiro_nome = $session->get('primeiro_nome');
 
 ?>
 
@@ -13,28 +13,25 @@ $primeiro_nome = $session->get("primeiro_nome");
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Seja Bem-Vindo <?= $primeiro_nome ?> !</h1>
+          <h1 class="m-0">Bem-Vindo <?= $primeiro_nome ?> !</h1>
         </div><!-- /.col -->
         <!-- <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active">Starter Page</li>
-          </ol>
-        </div> -->
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Starter Page</li>
+            </ol>
+          </div> -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
   <!-- /.content-header -->
 
+  <!-- Main content -->
   <div class="content">
     <div class="container-fluid">
 
-      <!-- CONTEUDO -->
-
       <div class="row">
-
-        <!-- /.1.col -->
-        <div class="col-md-4 col-sm-6 col-12">
+        <div class="col-md-3 col-sm-6 col-12">
           <div class="info-box">
             <span class="info-box-icon bg-info"><i class="fas fa-users"></i></span>
 
@@ -47,11 +44,9 @@ $primeiro_nome = $session->get("primeiro_nome");
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-
-        <!-- /2.col -->
-        <div class="col-md-4 col-sm-6 col-12">
+        <div class="col-md-3 col-sm-6 col-12">
           <div class="info-box">
-            <span class="info-box-icon bg-success"><i class="fas fa-user-tie"></i></span>
+            <span class="info-box-icon bg-success"><i class="fa-users-tie"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Funcionários</span>
@@ -62,9 +57,7 @@ $primeiro_nome = $session->get("primeiro_nome");
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-
-        <!-- /3.col -->
-        <div class="col-md-4 col-sm-6 col-12">
+        <div class="col-md-3 col-sm-6 col-12">
           <div class="info-box">
             <span class="info-box-icon bg-warning"><i class="fas fa-box-open"></i></span>
 
@@ -77,8 +70,7 @@ $primeiro_nome = $session->get("primeiro_nome");
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-
-      </div> <!-- FIM DIV ROW -->
+      </div>
 
       <div class="row">
         <div class="col-lg-6">
@@ -123,55 +115,52 @@ $primeiro_nome = $session->get("primeiro_nome");
                 <canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
               </div>
             </div>
-
+            <!-- /.card-body -->
           </div>
+          <!-- /.card -->
         </div>
+      </div>
 
-      </div> <!-- FIM div class="container-fluid" -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
 
-    </div> <!-- /.content -->
-
-  </div> <!-- /.content-wrapper -->
-
-  <script>
-    new Chart(document.getElementById("chartjs-1"), {
-      "type": "bar",
-      "data": {
-        "labels": ["Clientes", "Funcionários", "Produtos"],
-        "datasets": [{
-          "label": "Total",
-          "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
-          "fill": false,
-          "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
-          "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
-          "borderWidth": 1
-        }]
-      },
-      "options": {
-        "scales": {
-          "yAxes": [{
-            "ticks": {
-              "beginAtZero": true
-            }
-          }]
-        }
-      }
-    });
-
-    new Chart(document.getElementById("chartjs-4"), {
-      "type": "doughnut",
-      "data": {
-        "labels": ["Clientes", "Funcionários", "Produtos"],
-        "datasets": [{
-          "label": "Total",
-          "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
-          "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+<script>
+  new Chart(document.getElementById("chartjs-1"), {
+    "type": "bar",
+    "data": {
+      "labels": ["Clientes", "Funcionários", "Produtos"],
+      "datasets": [{
+        "label": "Total",
+        "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
+        "fill": false,
+        "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
+        "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
+        "borderWidth": 1
+      }]
+    },
+    "options": {
+      "scales": {
+        "yAxes": [{
+          "ticks": {
+            "beginAtZero": true
+          }
         }]
       }
-    });
-  </script>
+    }
+  });
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" 
-        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-</script> -->
+  new Chart(document.getElementById("chartjs-4"), {
+    "type": "doughnut",
+    "data": {
+      "labels": ["Clientes", "Funcionários", "Produtos"],
+      "datasets": [{
+        "label": "Total",
+        "data": [<?= $total_de_clientes ?>, <?= $total_de_funcionarios ?>, <?= $total_de_produtos ?>],
+        "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+      }]
+    }
+  });
+</script>
