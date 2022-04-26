@@ -2,7 +2,7 @@
 
 $session = session();
 
-$primeiro_nome = $session->get('primeiro_nome');
+$primeiro_nome = $session->get("primeiro_nome");
 
 ?>
 
@@ -13,25 +13,28 @@ $primeiro_nome = $session->get('primeiro_nome');
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Bem-Vindo <?= $primeiro_nome ?> !</h1>
+          <h1 class="m-0">Seja Bem-Vindo <?= $primeiro_nome ?> !</h1>
         </div><!-- /.col -->
         <!-- <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
-            </ol>
-          </div> -->
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Starter Page</li>
+          </ol>
+        </div> -->
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
   <!-- /.content-header -->
 
-  <!-- Main content -->
   <div class="content">
     <div class="container-fluid">
 
+      <!-- CONTEUDO -->
+
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-12">
+
+        <!-- /.1.col -->
+        <div class="col-md-4 col-sm-6 col-12">
           <div class="info-box">
             <span class="info-box-icon bg-info"><i class="fas fa-users"></i></span>
 
@@ -44,9 +47,11 @@ $primeiro_nome = $session->get('primeiro_nome');
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-12">
+
+        <!-- /2.col -->
+        <div class="col-md-4 col-sm-6 col-12">
           <div class="info-box">
-            <span class="info-box-icon bg-success"><i class="fa-users-tie"></i></span>
+            <span class="info-box-icon bg-success"><i class="fas fa-user-tie"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Funcionários</span>
@@ -57,7 +62,9 @@ $primeiro_nome = $session->get('primeiro_nome');
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-12">
+
+        <!-- /3.col -->
+        <div class="col-md-4 col-sm-6 col-12">
           <div class="info-box">
             <span class="info-box-icon bg-warning"><i class="fas fa-box-open"></i></span>
 
@@ -70,62 +77,71 @@ $primeiro_nome = $session->get('primeiro_nome');
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-      </div>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Gráfico de Barras</h3>
+      </div> <!-- FIM DIV ROW -->
 
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove">
-                  <i class="fas fa-times"></i>
-                </button>
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card">
+
+              <div class="card-header">
+                <h3 class="card-title">Gráfico de Barras</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+
               </div>
-            </div>
-            <div class="card-body">
-              <div class="chart">
-                <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="chartjs-1" class="chartjs" width="undefined" height="undefined"></canvas>
+                </div>
               </div>
+
+              <!-- /.card-body -->
             </div>
-            <!-- /.card-body -->
+            <!-- /.card -->
           </div>
-          <!-- /.card -->
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Gráfico de Pizza</h3>
 
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove">
-                  <i class="fas fa-times"></i>
-                </button>
+          <div class="col-lg-4">
+            <div class="card" >
+
+              <div class="card-header">
+                <h3 class="card-title">Gráfico de Pizza</h3>
+                <div class="card-tools" >
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <div class="chart">
-                <canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
+
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="chartjs-4" class="chartjs" width="undefined" height="undefined"></canvas>
+                </div>
               </div>
+
             </div>
-            <!-- /.card-body -->
           </div>
-          <!-- /.card -->
         </div>
-      </div>
 
-    </div><!-- /.container-fluid -->
-  </div>
-  <!-- /.content -->
+      </div> <!-- FIM div class="container-fluid" -->
+
+    </div> <!-- /.content -->
+
+  </div> <!-- /.content-wrapper -->
+
 </div>
-<!-- /.content-wrapper -->
 
 <script>
   new Chart(document.getElementById("chartjs-1"), {

@@ -9,10 +9,10 @@
 <!-- /.control-sidebar -->
 
 <!-- Main Footer -->
-<footer class="main-footer " style="background-color: #17a2b8; color: black" >
+<footer class="main-footer " style="background-color: #17a2b8; color: black">
   <!-- To the right -->
   <div class=" float-right d-none d-sm-inline">
-  <strong>Dev. <a href="https://www.linkedin.com/in/filipe-rabelo-lana-648799228/" target="_blank">Filipe Rabelo</a> </strong>
+    <strong>Dev. <a href="https://www.linkedin.com/in/filipe-rabelo-lana-648799228/" target="_blank">Filipe Rabelo</a> </strong>
   </div>
   <!-- Default to the left -->
   <strong>All Tech &copy; <?= date('Y') ?></strong> Todos os direitos reservados!
@@ -30,8 +30,25 @@
   <!-- Bootstrap 4 -->
   <script src="<?= base_url("theme/plugins/bootstrap/js/bootstrap.bundle.min.js") ?>"></script>
 
+  <!-- DataTables  & Plugins -->
+  <script src="<?= base_url("theme/plugins/datatables/jquery.dataTables.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-responsive/js/dataTables.responsive.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-responsive/js/responsive.bootstrap4.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-buttons/js/dataTables.buttons.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-buttons/js/buttons.bootstrap4.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/jszip/jszip.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/pdfmake/pdfmake.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/pdfmake/vfs_fonts.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-buttons/js/buttons.html5.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-buttons/js/buttons.print.min.js") ?>"></script>
+  <script src="<?= base_url("theme/plugins/datatables-buttons/js/buttons.colVis.min.js") ?>"></script>
+
   <!-- AdminLTE App -->
   <script src="<?= base_url("theme/dist/js/adminlte.min.js") ?>"></script>
+
+
+
 
   </body>
 
